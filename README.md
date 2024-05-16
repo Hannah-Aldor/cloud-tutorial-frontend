@@ -23,7 +23,7 @@ This project is a Todo application built with React and integrated with Auth0 fo
     
     2. Set up Environment Variable for Vault Address.
         ```sh
-        export VAULT_ADDR='http://127.0.0.1:8200'
+        export VAULT_ADDR='http://10.0.0.188:8200/'
         ```
     3. Authenticate with Vault using the provided token.
         ```sh
@@ -40,7 +40,7 @@ This project is a Todo application built with React and integrated with Auth0 fo
     ```
 3. Run the Docker Container
     ```sh
-    docker run --env-file .env -p 3000:3000 todo-app
+    docker run -p 3000:80 todo-app
     ```
 4. Access the Application
     - Open a web browser and navigate to `http://localhost:3000`

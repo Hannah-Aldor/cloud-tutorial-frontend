@@ -4,6 +4,9 @@ FROM node:18-alpine
 # Set the working directory in the container
 WORKDIR /app
 
+# Copy the .env file to the container
+COPY .env .env
+
 # Copy package.json and package-lock.json to the container
 COPY package*.json ./
 
